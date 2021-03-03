@@ -1,0 +1,357 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 2.0 (19/3/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%!TEX program = xelatex
+% NOTICE: This template must be compiled with XeLaTeX, the line above should
+% ensure this happens automatically but if it doesn't you will need to specify 
+% XeLaTeX as the engine in your editor or script
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Font size, can be: 10pt, 11pt or 12pt
+
+\input{structure.tex} % Include the file that specifies the document structure
+
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example right footer:
+%\rfoot{\color{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{paracol}{2} % Begin the multi-column environment
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CURRICULUM VITAE TEXT
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
+	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\centering % Centre text
+	{\sffamily\Huge Akhil Krishna Mohan}\\\medskip % Your name
+	%{\Huge\color{headings}\cvtextfont i can use LaTeX}
+}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education} 
+
+% Blank \educationentry{} command to add another degree:
+
+%\educationentry{} % Duration
+%{} % Degree
+%{} % Honours, achievements or distinctions (e.g. first class honours)
+%{} % Department
+%{} % Institution
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+
+\begin{supertabular}{ll} % Start a table with two columns, the table will ensure everything is aligned
+	
+	\educationentry{2017 - 2021} % Duration
+	{B.S Mathematics \& Computer Science} % Degree
+	{} % Honours, achievements or distinctions (e.g. first class honours)
+	{Department of Computer Science} % Department
+	{University of Illinois Urbana-Champaign} % Institution
+	
+	%------------------------------------------------
+	\tableentry{Grade-Point Average}{3.26}{spaceafter}
+
+\end{supertabular}
+
+
+%----------------------------------------------------------------------------------------
+%	MAJOR RESEARCH PROJECT
+%----------------------------------------------------------------------------------------
+
+\section{Projects}
+
+{\raggedright\textbf{GAIME}\\\medskip}
+
+Developed a system of generalized board game AI, via a library of functions that allows a user to make games and add AI with minimal effort. Researched, studied, modified, and implemented several AI algorithms such as Minimax (with alpha-beta pruning) and Monte Carlo Tree Search.\\
+
+{\raggedright\textbf{Double Pendulum Simulation}\\\medskip}
+
+Developed a framework and a physics engine to run a simulation of a chaotic system with complex mechanics, modeled on a classical mechanics background.
+%\medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+% Blank \workposition command to add another job:
+
+%\workposition{} % Duration
+%{} % FT/PT (full time or part time)
+%{} % Employer
+%{} % Job title
+%{} % Description
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+
+\workposition{Current, from Jan 2019} % Duration
+{} % FT/PT (full time or part time)
+{University of Illinois} % Employer
+{Course Assistant - Software Design Studio} % Job title
+{Moderated weekly code reviews for a group of students, allowing them to learn and improve from their mistakes. Helped create content and infrastructure to aid the course. Helped students one-on-one with niche coding problems.}\\ % Description
+
+\workposition{Jan 2018 -- May 2018} % Duration
+{} % FT/PT (full time or part time)
+{University of Illinois} % Employer
+{Research Assistant - PURE Program} % Job title
+{Developed methods to model and solve partial differential equations using finite difference stencils, with the ultimate intention of modeling fluid flow. Presented a poster at research symposium (May 2018), and won ‘Best Presentation’ award for said work.}\\ % Description
+
+\workposition{May 2017 -- August 2017} % Duration
+{} % FT/PT (full time or part time)
+{SM Netserv Technologies} % Employer
+{Language Processing (NLP) Researcher/Developer} % Job title
+{Used Machine Learning and Data Science to create a sentence-chunking algorithm, linking sentences talking about the same subject. Created an original sentiment engine using a self-designed algorithm based on Valence Aware Dictionary and SEntiment Reasoner (VADER). Scraped, corrected and made inferences from social media text data (Twitter, Facebook, Reddit)}\\ % Description
+
+
+%------------------------------------------------
+
+\vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
+
+\switchcolumn % Switch to the next paracol column
+
+%----------------------------------------------------------------------------------------
+%	COLOURED CONTACT DETAILS BOX
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
+	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\colorbox{shade}{ % Create the coloured box
+		\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
+			\raisebox{-1pt}{\faPhone} & +1 (410) 596-2387 \\ % Phone number
+			\raisebox{0pt}{\small\faEnvelope} & \href{mailto:akhil2@illinois.edu}{akhil2@illinois.edu} \\ % Email address
+			%\raisebox{-1pt}{\small\faDesktop} & \href{https://www.github.com/nimberledge}{https://www.github.com/nimberledge} \\ % Website
+			\raisebox{-1pt}{\faGithub} & \href{https://www.github.com/nimberledge}{https://www.github.com/nimberledge} \\ % GitHub profile
+			\raisebox{-1pt}{} & \textit{Last updated on: Jan 22, 2019.}\\
+			%\raisebox{-1pt}{\faLinkedinSquare} & \href{https://www.linkedin.com/in/username}{https://www.linkedin.com/in/username} \\ % LinkedIn profile
+			% See fontawesome.pdf in the fonts folder for all icons you can use
+		\end{supertabular}
+	}
+}
+
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Technical Skills} 
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\begin{supertabular}{ll} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	
+	\tableentry{Languages}{Python, Java, C, C++, \LaTeX}{}
+	\tableentry{}{Ocaml, LISP, FSharp}{spaceafter}
+	
+	%------------------------------------------------
+	
+	\tableentry{Libraries}{OpenFrameworks, Cython,}{}
+	\tableentry{}{SpaCy, TextBlob, nltk, numpy,}{}
+	\tableentry{}{matplotlib, graphviz, scipy, bs4,}{}
+	\tableentry{}{pygame, pyglet}{spaceafter}
+	
+	%------------------------------------------------
+	
+\end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Communication Skills}
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+		
+	%------------------------------------------------
+	
+	\tableentry{Posters}{Poster at PURE Research symposium}{}
+	\tableentry {}{(May 2018)}{spaceafter}
+	
+	%------------------------------------------------
+
+	\tableentry{Leadership}{Project Head - GAIME}{}
+	\tableentry {}{CS 196 - Freshman Honors}{}
+	\tableentry {}{(Aug-Dec 2017)}{spaceafter}
+	\tableentry {}{Event Head - Mathtrix}{}
+	\tableentry {}{(Mathematics festival)}{}
+	\tableentry {}{(2017)}{}
+	%------------------------------------------------
+		
+\end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS DESCRIPTION
+%----------------------------------------------------------------------------------------
+
+\section{Coursework}
+
+\begin{tabular}{l l}
+Introductory CS & Freshman Honors\\
+Discrete Structures & Software Design Studio\\
+Abstract Linear Algebra &  Probability Theory\\
+Compiler Design & Data Structures\\
+Computer Architecture & Introductory Psychology\\
+Numerical Methods & Real Analysis\\
+\end{tabular} \\
+% Example \longformdescription{} command to add another section:
+
+%\longformdescription{Heading}{Description}
+
+%------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------------
+
+% As an alternative to a long-form publication list, you can create a shorter summary using only DOI values and years.
+
+% Example \doipublication{} command to add another publication:
+
+%\doipublication{Year}{DOI}{firstauthor}{spaceafter}
+
+% All four parameters are required (can be empty though)
+% A value of "firstauthor" in the third parameter will print the DOI in bold
+% A "spaceafter" value in the fourth parameter will add some vertical space -- this is to be used between years
+
+%------------------------------------------------
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	REFERENCES
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	Additional Information
+%----------------------------------------------------------------------------------------
+
+\section{Additional Information}
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\begin{supertabular}{ll} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	
+	\tableentry{Languages}{English, Hindi, Tamil, Kannada}{spaceafter}
+	
+	%------------------------------------------------
+	
+	\tableentry{Creativity}{Self-taught pianist and guitarist}{}
+	
+	%------------------------------------------------
+	
+\end{supertabular}
+
+\section{References}
+
+%\textit{References available on request}
+
+%------------------------------------------------
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	
+	\tableentry{Name}{\textbf{Mahalingam Vaidyanathan}}{}
+	\tableentry{Position}{Vice-President of Engineering}{}
+	\tableentry{}{SM Netserv Technologies}{}
+	\tableentry{Email}{malisharma@gmail.com}{spaceafter}
+	
+	%------------------------------------------------
+	
+%	\tableentry{}{}{} % Creates some additional whitespace between the references
+	
+	%------------------------------------------------
+	
+	\tableentry{Name}{\textbf{Jason Eric Turner}}{}
+	\tableentry{Position}{Aerospace Engineering PhD}{}
+	\tableentry{}{University of Illinois}{}
+	\tableentry{Email}{jasonet2@illinois.edu}{spaceafter}
+	
+	%------------------------------------------------
+
+%	\tableentry{}{}{} % Creates some additional whitespace between the references
+
+	%------------------------------------------------
+	
+	\tableentry{Name}{\textbf{James Schmidt}}{}
+	\tableentry{Position}{Mathematics PhD}{}
+	\tableentry{}{University of Illinois}{}
+	\tableentry{Email}{ajschmd2@illinois.edu}{spaceafter}
+	
+	%------------------------------------------------
+	
+\end{supertabular}
+
+%----------------------------------------------------------------------------------------
+
+\end{paracol}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
